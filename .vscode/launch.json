@@ -1,0 +1,123 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug 'hello'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=guessing_game_exe",
+                    "--package=rust_lab"
+                ],
+                "filter": {
+                    "name": "guessing_game_exe",
+                    "kind": "bin"
+                }
+            },
+            "console": "integratedTerminal",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug 'fibonacci'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=fibonacci",
+                    "--package=rust_lab"
+                ],
+                "filter": {
+                    "name": "fibonacci",
+                    "kind": "bin"
+                }
+            },
+            "console": "integratedTerminal",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug 'factorial'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=factorial",
+                    "--package=rust_lab"
+                ],
+                "filter": {
+                    "name": "factorial",
+                    "kind": "bin"
+                }
+            },
+            "console": "integratedTerminal",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug 'palindrome check'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=palindrome",
+                    "--package=rust_lab"
+                ],
+                "filter": {
+                    "name": "palindrome",
+                    "kind": "bin"
+                }
+            },
+            "console": "integratedTerminal",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release 'guessing game'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--release",
+                    "--bin=guessing_game_exe",
+                    "--package=rust_lab"
+                ],
+                "filter": {
+                    "name": "guessing_game_exe",
+                    "kind": "bin"
+                }
+            },
+            "console": "integratedTerminal",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'rust_lab'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=rust_lab",
+                    "--package=rust_lab"
+                ],
+                "filter": {
+                    "name": "rust_lab",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

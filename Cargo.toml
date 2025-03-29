@@ -1,0 +1,42 @@
+[package]
+name = "rust_lab"
+description = "Rust solutions for learning"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "guessing_game_exe"
+path = "src/guessing_game.rs"
+
+[[bin]]
+name = "fibonacci"
+path = "src/fibonacci.rs"
+
+[[bin]]
+name = "factorial"
+path = "src/factorial.rs"
+
+[[bin]]
+name = "palindrome"
+path = "src/palindrome.rs"
+
+[[bin]]
+name = "l4struct"
+path = "src/l4and5struct.rs"
+
+[[bin]]
+name = "l6collection"
+path = "src/l6collection.rs"
+
+
+# cargo run --release
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[dependencies]
+rand = "0.9.0"
+# Add your dependencies here

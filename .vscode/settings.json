@@ -1,0 +1,32 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSaveMode": "file",
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.rulers": [
+            120
+        ],
+        "editor.wordWrapColumn": 120,
+        "editor.inlayHints.enabled": "on",
+        "editor.codeActionWidget.includeNearbyQuickFixes": true,
+        "editor.codeLens": true,
+        "editor.suggestOnTriggerCharacters": true,
+        /* "editor.suggestSelection": "first",
+        "editor.suggest.insertMode": "replace",
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggest.showKeywords": true,
+        "editor.suggest.showSnippets": true,
+        "editor.suggest.showStatusBar": true,
+        "editor.suggest.showWords": true,
+        "editor.suggest.showColors": true,
+        "editor.suggest.showFiles": true,
+        "editor.suggest.showFolders": true,
+        "editor.suggest.showReferences": true, */
+    },
+    "editor.rulers": [
+        120
+    ],
+    "editor.wordWrapColumn": 120
+}
