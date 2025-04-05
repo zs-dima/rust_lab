@@ -4,8 +4,6 @@ use tasks::factorial_task as factorial;
 use tasks::fibonacci_task as fibonacci;
 use tasks::guessing_game_task as guessing_game_main;
 
-/// Simple program to greet a person
-
 /// rust_lab is a collection of Rust code samples for learning Rust programming concepts.
 ///
 /// You can run rust_lab with various subcommands and options.
