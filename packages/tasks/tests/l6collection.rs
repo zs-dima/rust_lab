@@ -1,10 +1,10 @@
-// #[path = "../src/6collection.rs"]
+// #[path = "../bin/l6collection.rs"]
 // mod collection;
 // use crate::collections;
 // pub use crate::front_of_house::l6collection;
 
-use rust_lab::l6collection::tasks;
 use std::collections;
+use tasks::l6collection_task as tasks;
 
 #[test]
 fn filter_vector_test() -> Result<(), String> {

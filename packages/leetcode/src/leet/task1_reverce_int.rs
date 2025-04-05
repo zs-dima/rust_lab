@@ -1,7 +1,5 @@
-pub mod task1 {
-    use std::collections;
-
-    pub fn reverce_int(int: i32) -> i32 {
+pub mod reverce_int {
+    pub fn reverce(int: i32) -> i32 {
         let mut result = 0;
         let mut num = int.abs();
         while num != 0 {

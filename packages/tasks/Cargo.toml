@@ -1,0 +1,44 @@
+[package]
+name = "tasks"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "guessing_game_exe"
+path = "bin/guessing_game.rs"
+
+[[bin]]
+name = "fibonacci"
+path = "bin/fibonacci.rs"
+
+[[bin]]
+name = "factorial"
+path = "bin/factorial.rs"
+
+[[bin]]
+name = "palindrome"
+path = "bin/palindrome.rs"
+
+[[bin]]
+name = "l4struct"
+path = "bin/l4and5struct.rs"
+
+[[bin]]
+name = "l6collection"
+path = "bin/l6collection.rs"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[dependencies]
+rand = "0.9.0"

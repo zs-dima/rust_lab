@@ -1,7 +1,5 @@
-pub mod task2 {
-    use std::collections;
-
-    pub fn merge_intervals(vec: &Vec<(i32, i32)>) -> Vec<(i32, i32)> {
+pub mod merge_intervals {
+    pub fn merge(vec: &Vec<(i32, i32)>) -> Vec<(i32, i32)> {
         let mut merged = Vec::new();
         let mut sorted_intervals = vec.clone();
         sorted_intervals.sort_by(|a, b| a.0.cmp(&b.0));

@@ -25,8 +25,45 @@
         "editor.suggest.showFolders": true,
         "editor.suggest.showReferences": true, */
     },
-    "editor.rulers": [
-        120
+    // Remove from file watching
+    "files.watcherExclude": {
+        "**/target": true,
+    },
+    "files.exclude": {
+        //"**/.*": true,
+        "**/target": true,
+    },
+    // Causes the debug view to automatically appear when a breakpoint is hit. This
+    // setting is global and not configurable per-language.
+    "debug.openDebug": "openOnDebugBreak",
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+        "Cargo.toml": ".flutter-plugins, .packages, .flutter-plugins-dependencies, .metadata, .packages, pubspec.lock, build.yaml, analysis_options.yaml, all_lint_rules.yaml, rs*.yaml, flutter*.yaml, icons_launcher.yaml, l10n.yaml, melos.yaml, pubspec_overrides.yaml",
+        ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
+        "readme.*": "authors, backers.md, changelog*, citation*, code_of_conduct.md, codeowners, contributing.md, contributors, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors.md",
+        "*.rs": "i_$(capture).rs, $(capture).config.rs",
+        "*.graphql": "$(capture).gql.rs, $(capture).*.gql.rs",
+        "firebase.json": " .firebaserc",
+    },
+    /* "files.associations": {
+    "*.drift": "sql"
+  }, */
+    "highlight.regexes": {
+        "(\"@\\s*.+\":\\s{0,1}{},)": {
+            "filterFileRegex": ".*\\.arb",
+            "decorations": [
+                {
+                    "overviewRulerColor": "#d19a66",
+                    "backgroundColor": "#d19a66",
+                    "color": "#282c34",
+                    "fontWeight": "bold"
+                }
+            ]
+        }
+    },
+    "cSpell.words": [
+        ""
     ],
-    "editor.wordWrapColumn": 120
+    "cSpell.ignorePaths": []
 }

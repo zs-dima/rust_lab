@@ -1,4 +1,4 @@
-pub mod tasks {
+pub mod l6collection {
     use std::collections;
 
     pub fn filter_vector(vec: &Vec<i32>, threshold: i32) -> Vec<i32> {
@@ -18,17 +18,6 @@ pub mod tasks {
             *count += 1;
         }
         word_count
-    }
-}
-
-fn main() {
-    let numbers = vec![-1, -3, 5, -3, 7, 9];
-
-    println!("Positive numbers: {:?}", tasks::filter_vector(&numbers, 0));
-
-    let word_count = tasks::count_words("hello world hello");
-    for (word, count) in &word_count {
-        println!("{}: {}", word, count);
     }
 }
 
